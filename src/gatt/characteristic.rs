@@ -5,6 +5,7 @@ use std::{
 };
 use uuid::Uuid;
 
+#[allow(dead_code)]
 #[derive(Debug, Clone)]
 pub struct Characteristic {
     pub(crate) uuid: Uuid,

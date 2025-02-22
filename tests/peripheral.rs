@@ -158,11 +158,7 @@ async fn it_advertises_gatt() {
     let service_uuid = Uuid::from_sdp_short_uuid(0x1234_u16);
     let peripheral = Peripheral::new().await.unwrap();
     peripheral
-        .add_service(&Service::new(
-            service_uuid,
-            true,
-            characteristics,
-        ))
+        .add_service(&Service::new(service_uuid, true, characteristics))
         .unwrap();
     let main_fut = async move {
         while !peripheral.is_powered().await.unwrap() {}
