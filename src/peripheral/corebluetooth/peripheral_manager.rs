@@ -3,7 +3,13 @@ use std::{
     sync::{Once, ONCE_INIT},
 };
 
-use objc::{class, declare::ClassDecl, msg_send, runtime::{BOOL, Class, NO, Object, Protocol, Sel, YES}, sel, sel_impl};
+use objc::{
+    class,
+    declare::ClassDecl,
+    msg_send,
+    runtime::{Class, Object, Protocol, Sel, BOOL, NO, YES},
+    sel, sel_impl,
+};
 use objc_foundation::{
     INSArray, INSData, INSDictionary, INSString, NSArray, NSData, NSDictionary, NSObject, NSString,
 };

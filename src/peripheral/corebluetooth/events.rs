@@ -1,4 +1,8 @@
-use objc::{msg_send, runtime::{BOOL, NO, Object, Sel, YES}, sel, sel_impl};
+use objc::{
+    msg_send,
+    runtime::{Object, Sel, BOOL, NO, YES},
+    sel, sel_impl,
+};
 use objc_foundation::{INSArray, INSString, NSArray, NSObject, NSString};
 
 use super::{
