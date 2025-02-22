@@ -9,7 +9,7 @@ impl IntoBool for BOOL {
         match self {
             YES => true,
             NO => false,
-            //_ => unreachable!("Unknown Objective-C BOOL value."),
+            _ => unreachable!("Unknown Objective-C BOOL value."),
         }
     }
 }
